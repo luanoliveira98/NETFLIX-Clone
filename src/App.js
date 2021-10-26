@@ -63,6 +63,12 @@ export default () => {
         Direitos de imagem para <a href="https://netflix.com">Netflix</a><br/>
         Dados pegos do site <a href="https://themoviedb.org">Themoviedb.org</a><br/>
       </footer>
+
+      {movieList.length <= 0 && 
+        <div className="loading">
+          <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="loading" />
+        </div>
+      }
     </div>
   );
 }
